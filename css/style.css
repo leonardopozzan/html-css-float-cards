@@ -7,7 +7,7 @@
 html{
     font-family: 'Fredoka One', cursive;
 }
-.fixclear{
+.clear_fix::after{
     content: '';
     display: table;
     clear: both;
@@ -24,15 +24,12 @@ html{
     text-align: center;
     margin: 30px 0;
 }
-#testo{
+.primo_paragrafo{
     text-align: justify;
     text-align-last: center;
 }
-.testo_white{
-    color: white;
-}
 
-/* caratteristiche card */
+/* caratteristiche della card */
 .team .card:nth-of-type(3n+2){
     margin-left: 25px;
     margin-right: 25px;
@@ -41,12 +38,11 @@ html{
     width: calc((100% - 50px) / 3);
     height: 100px;
     background-color: black;
-    vertical-align: middle;
     float: left;
     margin-top: 50px;
     box-shadow: 0px 0px 5px 0px #000000;
 }
-.descrizione{
+.description_card{
     height: 80px;
     padding-top: 10px;
     line-height: calc(80px / 3);
@@ -56,7 +52,7 @@ html{
     height: 100px;
     float: left;
 }
-.nome_card{
+.name_card{
     font-size: 18px;
     color: white;
 }
@@ -67,9 +63,4 @@ html{
 .mail_card{
     font-size: 13px;
     color: rgb(26, 168, 216);
-}
-.descrizione{
-    height: 80px;
-    padding-top: 10px;
-    line-height: calc(80px / 3);
 }
